@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvitha Balarao - AI/ML Engineer Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background: linear-gradient(135deg, #d8b4fe 0%, #a78bfa 100%);
+  color:#2d3748;
+  line-height:1.7;
+  overflow-x:hidden;
+  position:relative;
+  min-height:100vh;
+}
+
+/* HEADER */
+header{text-align:center;padding:3rem 1rem;color:#2d3748;}
+header h1{font-size:3rem;margin-bottom:.5rem;color:#2d1b46}
+header p{font-size:1.1rem;color:#3f3d56}
+
+/* NAVIGATION */
+nav{
+  text-align:center;background:rgba(255,255,255,.6);
+  backdrop-filter:blur(12px);
+  border-radius:40px;padding:.8rem 2rem;position:sticky;top:10px;margin:auto;width:fit-content;
+  box-shadow:0 4px 15px rgba(0,0,0,.1)
+}
+nav a{
+  color:#2d1b46;text-decoration:none;margin:0 1rem;font-weight:600;
+  transition:color .3s ease;
+}
+nav a:hover{color:#5b21b6}
+
+/* SECTION STYLE */
+section{
+  max-width:1000px;margin:3rem auto;background:rgba(255,255,255,.85);
+  border-radius:20px;padding:2rem 2.5rem;box-shadow:0 8px 25px rgba(0,0,0,.08);
+  backdrop-filter:blur(10px);animation:fadeIn 1s ease
+}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+h2{
+  border-left:5px solid #6b21a8;
+  padding-left:10px;
+  margin-bottom:1rem;
+  color:#3f3d56;
+}
+ul{list-style:none}
+li{margin-bottom:.6rem;font-size:1rem;color:#2d3748}
+
+/* GRID CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+.card{
+  background:linear-gradient(135deg, #ffffff 0%, #f8f5ff 100%);
+  border-radius:15px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+  padding:1.5rem;
+  text-align:center;
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+.emoji{font-size:2.8rem;margin-bottom:.6rem;}
+.card h3{color:#5b21b6;margin-bottom:.4rem}
+.card p{color:#4a5568;font-size:.95rem}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;padding:.8rem 1.6rem;border-radius:10px;
+  text-decoration:none;font-weight:600;margin:.3rem;
+  background:linear-gradient(135deg,#5b21b6,#7e22ce);
+  color:#fff;transition:all .3s ease;
+  box-shadow:0 3px 10px rgba(91,33,182,.3)
+}
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 16px rgba(91,33,182,.4)
+}
+
+/* CONTACT FORM */
+.contact-form{
+  background:rgba(255,255,255,.95);
+  border-radius:20px;
+  padding:2.5rem;
+  box-shadow:0 6px 20px rgba(0,0,0,.1);
+  backdrop-filter:blur(8px);
+}
+.contact-form h3{
+  text-align:center;
+  color:#5b21b6;
+  margin-bottom:1.5rem;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+}
+input, textarea{
+  width:100%;
+  padding:1rem;
+  border:1.8px solid #d6d9e6;
+  border-radius:10px;
+  font-size:1rem;
+  transition:border .3s ease;
+  background:#f8f9fc;
+  color:#2d3748;
+}
+input:focus, textarea:focus{
+  border-color:#7e22ce;
+  outline:none;
+  background:#fff;
+}
+textarea{resize:none;height:120px;}
+button{
+  align-self:center;
+  background:linear-gradient(135deg,#5b21b6,#7e22ce);
+  color:white;
+  border:none;
+  padding:1rem 2rem;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:all .3s ease;
+  box-shadow:0 3px 10px rgba(91,33,182,.3);
+}
+button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 18px rgba(91,33,182,.4);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;padding:2rem;
+  background:rgba(255,255,255,.6);
+  backdrop-filter:blur(8px);
+  margin-top:3rem;color:#4a4a68
+}
+footer a{color:#5b21b6;text-decoration:none;font-weight:600}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Anvitha Balarao</h1>
+  <p>AI/ML Engineer | Machine Learning Enthusiast</p>
+  <p>📍 Hyderabad, India</p>
+  <a href="mailto:anvithabalerao16@gmail.com" class="btn">Contact Me</a>
+  <a href="https://linkedin.com/in/anvitha16" class="btn" target="_blank">LinkedIn</a>
+  <a href="https://github.com/anvitha16" class="btn" target="_blank">GitHub</a>
+</header>
+
+<nav>
+  <a href="#objective">Objective</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="objective">
+  <h2>Career Objective</h2>
+  <p>Detail-oriented AI/ML student passionate about designing scalable, intelligent systems that merge data-driven insights with real-world innovation.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><b>🎓 B.Tech in AI & ML</b> — Malla Reddy University (2021–2025) | CGPA: 8.03</li>
+    <li><b>🏫 Intermediate</b> — Sri Chaitanya Junior College (2019–2021) | CGPA: 7.8</li>
+    <li><b>📘 SSC</b> — Triveni Talent School (2015–2019) | CGPA: 8.5</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>🤖 AI/ML: Deep Learning, NLP, TensorFlow, Pandas, NumPy, Scikit-learn</li>
+    <li>💻 Programming: Python, Java</li>
+    <li>🌐 Web: HTML, CSS, JavaScript, Flask</li>
+    <li>☁️ Databases & Cloud: MySQL, MongoDB, AWS Cloud</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🚗</div>
+      <h3>Adaptive Cruise Control</h3>
+      <p>IoT system using Arduino & sensors for real-time obstacle detection and automatic speed control.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🐝</div>
+      <h3>Honey Bee Health Detection</h3>
+      <p>CNN-based model for detecting and classifying bee colony health using image data.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📚🎬</div>
+      <h3>Cross Domain Recommendation System</h3>
+      <p>Deep learning model recommending books and movies using Tkinter GUI.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">📊</div>
+      <h3>Data Analysis Using Python</h3>
+      <p>Coursera (Nov 2022)</p>
+    </div>
+    <div class="card">
+      <div class="emoji">📜</div>
+      <h3>Cambridge English Empower B2</h3>
+      <p>Cambridge (Apr 2023)</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🤖</div>
+      <h3>Introduction to Artificial Intelligence</h3>
+      <p>Coursera (Jan 2023)</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements & Workshops</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">👩‍💻</div>
+      <h3>Microsoft Student Club</h3>
+      <p>Contributed to collaborative projects and mentoring peers at MRUH.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🧠</div>
+      <h3>NLP Bootcamp</h3>
+      <p>Hands-on training in text analysis and language modeling.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🏆</div>
+      <h3>National Intellithon 2K24</h3>
+      <p>Showcased innovative AI solutions on a national stage.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">💡</div>
+      <h3>Web Development Bootcamp</h3>
+      <p>Secured 1st place for creative and responsive design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 💬 CONTACT FORM SECTION -->
+<section id="contact">
+  <div class="contact-form">
+    <h3>📩 Get in Touch</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Anvitha Balarao | AI/ML Engineer | Hyderabad, India</p>
+  <p>
+    <a href="mailto:anvithabalerao16@gmail.com">Email</a> |
+    <a href="https://linkedin.com/in/anvitha16" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/anvitha16" target="_blank">GitHub</a>
+  </p>
+</footer>
+</body>
+</html>
